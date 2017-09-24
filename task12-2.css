@@ -1,0 +1,84 @@
+body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+  border: none;
+}
+header {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  background: #5fc0cd;
+}
+header .button-1,
+header .button-2 {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+header .button-1 {
+  margin-right: -5px;
+  color: white;
+  background: #55a8b3;
+}
+header .button-2 {
+  margin-left: -5px;
+  color: #55a8b3;
+  background: #fff;
+}
+header .button-3 {
+  float: right;
+  margin-top: -40px;
+  background-color: #5fc0cd;
+}
+.info-1,
+.info-2,
+.info-3 {
+  float: left;
+  width: 33.33%;
+  height: 40px;
+  color: gray;
+  outline: none;
+  border: 1px solid #ccc;
+}
+main {
+  margin-top: 40px;
+}
+main .container {
+  padding: 10px 2% 10px 2%;
+  border-bottom: 1px solid #ccc;
+}
+main .container img {
+  vertical-align: middle;
+}
+main .container .cat-1,
+main .container .cat-3 {
+  line-height: 30px;
+  color: gray;
+}
+main .container .cat-2 {
+  line-height: 40px;
+}
+main .container .cat-2 .dog-1 {
+  padding-left: 30px;
+}
+main .container .cat-2 .dog-2 {
+  float: right;
+  color: red;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background: #f8fafb;
+}
+footer button {
+  background: #f8fafb;
+  cursor: pointer;
+}

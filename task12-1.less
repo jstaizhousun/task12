@@ -1,0 +1,117 @@
+@height:6rem;
+@line-height:6rem;
+@font-size:2rem;
+@color:#fff;
+@background:#68cdd5;
+@border-bottom:solid #ccc;
+
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+}
+header,footer{
+  position: fixed;
+  width: 100%;
+  height: @height;
+  font-size:@font-size + 0.5rem;
+  text-align: center;
+}
+header{
+  line-height: @line-height;
+  color: @color;
+  background: @background;
+  background-image:url(image/back-1.png);
+  background-repeat:no-repeat;
+  background-position: 2%;
+}
+main{
+  position: fixed;
+  width: 100%;
+  top: @height;
+  bottom: @height;
+  overflow-x: hidden;
+  .user-section{
+    display: flex;
+    align-items: center;
+    height: @height * 5;
+    color: @color;
+    background: url(image/icon1.png) no-repeat;
+    background-size: cover;
+    .user-iamge{
+      padding: 0 5%;
+    }
+    .user-info{
+      flex: 3;
+      .username{
+        padding-bottom: 1rem;
+        font-size:@font-size + 0.5rem;
+      }
+      .location{
+        padding-left: 2.5rem;
+        font-size:@font-size;
+        background: url(image/shape.png) no-repeat left;
+      }
+    }
+  }
+  .user-form{
+    font-size:@font-size;
+    .title{
+      padding-left: 1rem;
+      line-height:@line-height + 2rem;
+      border-bottom:@border-bottom;
+      span{
+        padding: 0 2rem;
+        border-left: .5rem solid #5fc0cd;
+      }
+    }
+    .list{
+      padding: 0 2rem;
+      padding-bottom: 2rem;
+      li{
+        padding: 2rem;
+        line-height:@line-height - 2rem;
+        border-bottom:@border-bottom;
+        overflow: auto;
+        .tag{
+          display:inline-block;
+          padding: 0 2rem 0 4rem;
+          background: url(image/star.png) no-repeat left center;
+        }
+        .label{
+          position: absolute;
+          width: 10rem;
+          color: #aaa;
+          border-right: solid #aaa;
+        }
+        .item{
+          margin-left: 12rem;
+        }
+      }
+    }
+  }
+}
+footer{
+  bottom: 0;
+  padding: 2rem 0;
+  .leftbox{
+    color: #68cdd5;
+    background: #fff;
+    border: solid #68cdd5;
+  }
+  .rightbox {
+    color: #fff;
+    background: #68cdd5;
+    border: solid #68cdd5;
+  }
+  .leftbox,.rightbox{
+    margin: 0 1%;
+    width: 45%;
+    height:@height;
+    font-size:@font-size + 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    outline: none;
+  }
+}
